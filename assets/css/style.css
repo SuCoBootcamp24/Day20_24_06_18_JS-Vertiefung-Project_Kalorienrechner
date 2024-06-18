@@ -50,7 +50,6 @@ body {
   background: rgb(211, 209, 209);
   border-radius: 10px;
 
-  height: 40vh;
   width: 30%;
 
   padding: 1%;
@@ -109,4 +108,9 @@ form {
 
 .kaloTable thead {
   background-color: #8602f9;
+}
+
+.kaloTable thead tr:nth-last-of-type(1) th:nth-of-type(1),
+.kaloTable thead tr:nth-last-of-type(1) th:nth-of-type(3) {
+  border: 10px;
 }

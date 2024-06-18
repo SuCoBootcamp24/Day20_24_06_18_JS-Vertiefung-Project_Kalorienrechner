@@ -28,9 +28,11 @@ function fillOutputTable(bmr, palInput) {
   const outputTable21 = document.getElementById("table21");
   const outputTable22 = document.getElementById("table22");
 
+  //Grundumsatz
   outputTable11.innerText = bmr.toFixed(2);
   outputTable12.innerText = (bmr * factor).toFixed(2);
 
+  //Gesamtumsatz
   outputTable21.innerText = (palInput * bmr).toFixed(2);
   outputTable22.innerText = (palInput * bmr * factor).toFixed(2);
 }
