@@ -81,6 +81,10 @@ form {
   border-radius: 5px;
 }
 
+#submit:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.327);
+}
+
 .wrapper article {
   width: 100%;
 }
@@ -110,7 +114,10 @@ form {
   background-color: #8602f9;
 }
 
-.kaloTable thead tr:nth-last-of-type(1) th:nth-of-type(1),
-.kaloTable thead tr:nth-last-of-type(1) th:nth-of-type(3) {
-  border: 10px;
+.kaloTable thead tr:nth-last-of-type(1) th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.kaloTable thead tr:nth-last-of-type(1) th:last-child {
+  border-radius: 0 10px 0 0;
 }
