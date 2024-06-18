@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>JS-Vertiefung-Project Kalorienrechner</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <form>
+        <h1>Kalorienrechner</h1>
+
+        <label for="bodyHight">Körpergröße:</label>
+        <input class="inputbox" id="bodyHight" type="number" />
+
+        <label for="age">Alter:</label>
+        <input class="inputbox" id="age" type="number" />
+
+        <label for="bodyWeight">Gewicht:</label>
+        <input class="inputbox" id="bodyWeight" type="number" />
+
+        <div class="checkbox">
+          <input type="radio" name="sex" id="female" value="female" />
+          <label for="female">Weiblich</label>
+
+          <input type="radio" name="sex" id="male" value="male" checked />
+          <label for="male">Männlich</label>
+        </div>
+
+        <select class="inputbox" name="pal" id="pal">
+          <option value="0.95">Schlafen</option>
+          <option value="1.2">Nur Sitzen oder Liegen</option>
+          <option value="1.5" selected>
+            Ausschließlich sitzende Tätigkeit mit wenig oder keiner körperlichen
+            Aktivität in der Freizeit, z.B. Büroarbeit
+          </option>
+          <option value="1.7">
+            Sitzende Tätigkeit mit zeitweilig gehender oder stehender Tätigkeit,
+            z.B. Studierende, Fließbandarbeitende, Laborfachkräfte,
+            Berufskraftfahrende
+          </option>
+          <option value="1.9">
+            Überwiegend gehende oder stehende Tätigkeit, z.B. Verkäufer: innen,
+            Kellner: innen, Handwerker: innen, Mechaniker: innen
+          </option>
+          <option value="2.2">Körperlich anstrengende berufliche Arbeit</option>
+        </select>
+
+        <input
+          onclick="kjCalc(event)"
+          type="submit"
+          value="Submit"
+          id="submit"
+        />
+      </form>
+
+      <article>
+        <table class="kaloTable">
+          <thead>
+            <tr>
+              <th></th>
+              <th>kcal</th>
+              <th>kJ</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Grundumsatz</th>
+              <td id="table11">0</td>
+              <td id="table12">0</td>
+            </tr>
+            <tr>
+              <th>Gesamtumsatz</th>
+              <td id="table21">0</td>
+              <td id="table22">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </article>
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

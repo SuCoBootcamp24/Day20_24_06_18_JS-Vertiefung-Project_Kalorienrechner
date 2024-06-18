@@ -1,0 +1,112 @@
+/** ---- BASIC ---- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 10px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #323a45;
+}
+
+label {
+  font-size: 2rem;
+}
+
+.inputbox {
+  border: 2px solid #a86eff;
+  border-radius: 5px;
+  height: 30px;
+}
+
+/** ------ Form ---- */
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100%;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+
+  background: rgb(211, 209, 209);
+  border-radius: 10px;
+
+  height: 40vh;
+  width: 30%;
+
+  padding: 1%;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30vh;
+  width: 100%;
+}
+
+.checkbox {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+#male {
+  margin-left: 10px;
+}
+
+#submit {
+  background: #8602f9;
+  color: white;
+  height: 40px;
+
+  border-radius: 5px;
+}
+
+.wrapper article {
+  width: 100%;
+}
+
+.kaloTable {
+  width: 100%;
+  background-color: #a86eff;
+  border-collapse: collapse;
+  border-width: 0px;
+  border-color: #8602f9;
+  border-style: solid;
+  border-radius: 10px;
+  font-size: 1.6rem;
+  color: #fff;
+}
+
+.kaloTable td,
+.kaloTable th {
+  border-width: 0px;
+  border-color: #8602f9;
+  border-style: solid;
+  padding: 5px;
+  text-align: start;
+}
+
+.kaloTable thead {
+  background-color: #8602f9;
+}
